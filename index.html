@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Knowledge</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>General Knowledge</h1>
+        <div class="progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div id="score" class="hidden">Your score: <span id="score-value"></span></div>
+        <div class="quiz">
+            <h2 id="question">Question goes here!</h2>
+        </div>
+        <div id="answer-buttons" class="btn-grid">
+            <!-- Buttons will be dynamically added here -->
+        </div>
+        <div class="timer-container">
+            <svg class="timer-svg" width="50" height="50">
+                <circle class="timer-circle" cx="25" cy="25" r="25"></circle>
+                <circle class="timer-circle-progress" cx="25" cy="25" r="25"></circle>
+            </svg>
+            <div class="timer-text" id="time">10</div>
+        </div>
+        <button id="next-btn" class="btn hidden">Next</button>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

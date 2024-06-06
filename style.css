@@ -1,0 +1,165 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #91a5ab, #34E89E);
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 50px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.quiz {
+    margin-bottom: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question-counter {
+    margin-bottom: 10px;
+}
+
+#question {
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1.5px solid #616161;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn.show {
+    opacity: 1;
+}
+
+.btn:hover {
+    background-color: #f9f9f9;
+}
+
+.btn.correct {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.btn.wrong {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#next-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.progress {
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 10px;
+    background-color: #4caf50;
+    transition: width 0.5s ease-in-out;
+}
+
+#result {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#score {
+    margin-bottom: 10px;
+}
+
+.correct-answer {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.incorrect-answer {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.correct-answer-review {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.timer-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.timer-svg {
+    transform: rotate(-90deg);
+}
+
+.timer-circle {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 5;
+}
+
+.timer-circle-progress {
+    fill: none;
+    stroke: #4caf50;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 157;
+    stroke-dashoffset: 157;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+}
